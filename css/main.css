@@ -12,5 +12,81 @@ body {
 .home {
   background-color: #090b1a;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .boxText {
+  width: 40%;
+  height: 60%;
+  background-color: #1b1938;
+}
+
+.home .boxText h1 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  padding: 50px 50px 30px 50px;
+  font-weight: 400;
+}
+
+.home .boxText h1 span {
+  color: #aa5cdb;
+}
+
+.home .boxText p {
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0 50px 20px 50px;
+  word-spacing: 3px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.home .boxText .boxSpan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 60px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+
+.home .boxText .boxSpan .span1 {
+  color: white;
+}
+
+.home .boxText .boxSpan .span2 {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+}
+
+.home .boxImage {
+  width: 40%;
+  height: 60%;
+  background-image: url(../images/image-header-desktop.jpg);
+  background-size: cover;
+}
+
+.footer {
+  text-align: center;
+  background-color: #090b1a;
+  font-size: 12px;
+  color: white;
+}
+
+.footer a {
+  color: #1b1938;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

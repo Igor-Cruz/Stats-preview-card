@@ -1,7 +1,108 @@
-@import "variables";
-@import "base";
+
+$main-bg: hsl(233, 47%, 7%);
+$card-bg:hsl(244, 38%, 16%);
+$accent:hsl(277, 64%, 61%);
+
+$mainheading-stats:hsl(0, 0%, 100%);
+$main-paragraph:hsla(0, 0%, 100%, 0.75);
+$stat-headings:hsla(0, 0%, 100%, 0.6);
+
+$font-primary: 'Inter', sans-serif;
+$font-second: 'Lexend Deca', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+}
 
 .home{
     background-color: $main-bg;
     height: 100vh;
+    // width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .boxText{
+        width: 40%;
+        height: 60%;
+        background-color: $card-bg;
+
+        h1{
+            color: $mainheading-stats;
+            font-family: $font-primary;
+            font-size: 40px;
+            padding:  50px 50px 30px 50px;
+            font-weight: 400;
+
+            span{
+                color: $accent;
+            }
+
+          
+        }
+
+        p{
+            color: $main-paragraph;
+            padding: 0 50px 20px 50px ;
+            word-spacing: 3px;
+            font-family: $font-primary;
+            font-weight: 400;
+        }
+
+        .boxSpan{
+            display: flex;
+            justify-content: space-around;
+            // align-items: center;
+            padding-top: 60px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-family: $font-primary;
+            
+
+            .span1{
+                color: $mainheading-stats;
+                
+                
+            }
+
+            .span2{
+                color: $stat-headings;
+                display: block;
+            
+            }
+            
+        }
+
+
+    }
+
+    .boxImage{
+       
+        width: 40%;
+        height: 60%;
+        background-image: url(../images/image-header-desktop.jpg);
+        background-size: cover;
+
+    }
 }
+
+.footer{
+    text-align: center;
+    background-color: $main-bg; 
+    font-size: 12px;
+    color: $mainheading-stats;
+    
+    a{
+        color: $card-bg;
+        text-decoration: none;
+    }
+}
+
+
